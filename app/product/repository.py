@@ -11,7 +11,7 @@ class ProductRepository:
         return product
 
     def get_all(self, db: Session):
-        return db.query(Product).order_by(Product.created_at.asc()).all()
+        return db.query(Product).order_by(Product.created_at.desc()).all()
 
     def get_by_id(self, db: Session, id: int):
         return db.query(Product).filter(Product.id == id).first()
