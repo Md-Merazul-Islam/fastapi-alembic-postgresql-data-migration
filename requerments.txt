@@ -6,3 +6,8 @@ alembic
 pandas 
 openpyxl
 python-multipart
+python-dotenv
+email-validator
+bcrypt==4.0.1
+passlib[bcrypt]==1.7.5
+python-jose
