@@ -4,7 +4,6 @@ from app.core.database import SessionLocal
 from app.auth.security import create_access_token
 from fastapi import APIRouter, Depends, HTTPException
 from app.auth.service import AuthService
-from fastapi.security import OAuth2PasswordRequestForm
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
